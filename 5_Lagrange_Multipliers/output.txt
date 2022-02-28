@@ -1,0 +1,50 @@
+Test instance #1.
+-----------------
+Weight vector w = 
+    0.7071   -0.7071
+
+Distance d = 
+    0.3536
+
+Margin = 
+    0.3536
+
+Distances = 
+    0.3536    0.3536    0.3536    0.3536
+
+Lagrange multipliers = 
+    3.0000
+    1.0000
+    1.0000
+    3.0000
+
+Support vectors = 
+     1     2     3     4
+
+Test instance #2.
+-----------------
+No solution found.
+ 
+Test instance #3.
+-----------------
+Weight vector w = 
+    0.8321   -0.5547
+
+Distance d = 
+    0.1387
+
+Margin = 
+    0.4160
+
+Distances = 
+    0.4160    0.4160    0.6934    0.4160
+
+Lagrange multipliers = 
+    2.8889
+    2.0000
+    0.0000
+    0.8889
+
+Support vectors = 
+     1     2     4
+

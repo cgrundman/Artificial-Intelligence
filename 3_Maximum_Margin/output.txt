@@ -1,0 +1,61 @@
+
+<a href = "matlab: helpview('optim','quadprogipc_min_found','CSHelpWindow');">Minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview('optim','quadprog_feasible_direction','CSHelpWindow');">feasible directions</a>, to within the value of the <a href = "matlab: helpview('optim','optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:ipqpcommon:Exit1basic'},{'optimlib:ipqpcommon:Exit1detailed','5.324630e-13','1.000000e-08','1.096525e-14','2.444711e-14','1.000000e-08'},true,true);;">stopping criteria details</a>>
+Test instance #1.
+-----------------
+Weight vector w = 
+    2.0000
+   -2.0000
+
+Distance d = 
+   -3.0000
+
+Margin = 
+    0.3536
+
+Distances = 
+    0.3536    0.3536    1.0607    0.3536
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('savefig', 'C:\Program Files\MATLAB\R2021b\toolbox\matlab\graphics\objectsystem\savefig.m', 43)" style="font-weight:bold">savefig</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\matlab\graphics\objectsystem\savefig.m',43,0)">line 43</a>)
+H must be an array of handles to valid figures.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('saveasfig', 'C:\Program Files\MATLAB\R2021b\toolbox\matlab\general\private\saveasfig.m', 6)" style="font-weight:bold">saveasfig</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\matlab\general\private\saveasfig.m',6,0)">line 6</a>)
+savefig(h, name);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('saveas', 'C:\Program Files\MATLAB\R2021b\toolbox\matlab\general\saveas.m', 153)" style="font-weight:bold">saveas</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\matlab\general\saveas.m',153,0)">line 153</a>)
+    feval( ['saveas' format], h, name )
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('maximum_margin', 'C:\Users\chris\Documents\GitHub\Artificial-Intelligence\Artificial Intelligence\Exercise_4\maximum_margin.m', 57)" style="font-weight:bold">maximum_margin</a> (<a href="matlab: opentoline('C:\Users\chris\Documents\GitHub\Artificial-Intelligence\Artificial Intelligence\Exercise_4\maximum_margin.m',57,0)">line 57</a>)
+saveas(gcf, 'maximum_margin_1.fig');
+} 
+uiopen('C:\Users\chris\Documents\GitHub\Artificial-Intelligence\Artificial Intelligence\Exercise_4\maxMarg.m',1)
+maximum_margin
+[Warning: File not found or permission denied] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('maximum_margin', 'C:\Users\chris\Documents\GitHub\Artificial-Intelligence\Artificial Intelligence\Exercise_4\maximum_margin.m', 8)" style="font-weight:bold">maximum_margin</a> (<a href="matlab: opentoline('C:\Users\chris\Documents\GitHub\Artificial-Intelligence\Artificial Intelligence\Exercise_4\maximum_margin.m',8,0)">line 8</a>)] 
+Test instance #1.
+-----------------
+Weight vector w = 
+    0.7071
+   -0.7071
+
+Distance d = 
+   -1.0607
+
+Margin = 
+    0.3536
+
+Distances = 
+    0.3536
+    0.3536
+    1.0607
+    0.3536
+
+Test instance #2.
+-----------------
+No solution found.
+ 

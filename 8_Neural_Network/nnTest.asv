@@ -1,0 +1,59 @@
+clc
+clear 
+close all
+
+% Load Data.
+load('10mat.mat');
+
+% Initialize Grid.
+x1 = -5:0.02:5;
+x2 = -5:0.02:5;
+G = zeros(length(x1), length(x2));
+
+%--------------------------------------------------------------------------
+% Calculate classification results on Grid.
+% YOUR IMPLEMENTATION GOES HERE...
+% we construct the grid, by having each row as the 
+% x2 vector and x1 as the columns and obtaining the y with the
+% classification function made before. 
+
+X = zeros(length(x2),2);
+for i = 1:length(x1)
+    for j = 1:length(x2)
+        X(j,:) = [x1(i);x2(j)]';
+    end
+    y_dash = classification(X, g, g_bias, h, h_bias );
+    G(i,:) = y_dash;
+end
+
+%--------------------------------------------------------------------------
+% Plot given data and classification results.
+figure(1);
+set(gcf, 'Units', 'normalized', 'OuterPosition', [0.05 0.05 0.9 0.9]);
+set(gcf, 'PaperOrientation', 'landscape');
+set(gcf, 'PaperUnits', 'centimeters', 'PaperPosition', [0 0 29.7 21]);
+set(gcf, 'PaperSize', [29.7 21.0]);
+subplot(1, 2, 1);
+plot(X(y ==  1, 1), X(y ==  1, 2), 'kx', 'MarkerSize', 15); hold on;
+plot(X(y == 0, 1), X(y == 0, 2), 'k+', 'MarkerSize', 15);
+xlabel('x_1', 'FontSize', 14, 'FontWeight', 'bold');
+ylabel('x_2', 'FontSize', 14, 'FontWeight', 'bold');
+title('Given data', 'FontSize', 14, 'FontWeight', 'bold');
+set(gca, 'FontSize', 14, 'FontWeight', 'bold');
+axis equal;
+xlim([-5.1 5.1]);
+ylim([-5.1 5.1]);
+legend('1', '0', 'Location', 'NorthEast') 
+subplot(1, 2, 2);
+surface(x1, x2, G', 'EdgeColor', 'none');
+xlabel('x_1', 'FontSize', 14, 'FontWeight', 'bold');
+ylabel('x_2', 'FontSize', 14, 'FontWeight', 'bold');
+title('Classification results', 'FontSize', 14, 'FontWeight', 'bold');
+set(gca, 'FontSize', 14, 'FontWeight', 'bold');
+axis equal;
+xlim([-5 5]);
+ylim([-5 5]);
+colormap([0.75 0.75 0.75; 0.25 0.25 0.25]);
+colorbar('YTick', [0.25 0.75], 'YTickLabel', {' 0', ' 1'}, 'FontSize', 14, 'FontWeight', 'bold');
+
+print('-dpng', '1.png', '-r150');
